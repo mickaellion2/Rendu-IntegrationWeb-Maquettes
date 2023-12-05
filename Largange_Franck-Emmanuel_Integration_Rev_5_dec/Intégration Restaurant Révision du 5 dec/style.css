@@ -1,0 +1,235 @@
+.affichage_desktop{
+	display: flex;
+		width: 30%;
+
+	justify-content: space-around
+}
+
+#menu-cache{
+	display: flex;
+	flex-direction: column;
+	float: right;
+	margin-left: 10px;
+	background-color: #37322B;
+	display: flex;
+	color: white;
+	//padding: 10px;
+	align-items: center;
+}
+
+#menu-cache, .affichage_mobile{
+	display: none;
+}
+
+main{
+	background-color: #F6F0ED;
+}
+.section_site div{
+	display: flex;	
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: stretch;
+}
+
+.section_site{
+	padding-top: 1%;
+}
+
+article{
+	padding: 5%;
+	max-width: 40%;
+	display: flex;
+    flex-direction: column;
+}
+main img{
+	border: 1px solid black;
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+
+h1,h2{
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-family: Roboto Bold;
+}
+h1{
+	text-align: center;
+	margin: 0;
+	margin-bottom: 1%;
+}
+
+body{
+	margin: 0;
+	color: #32302C;
+	font-family: Roboto;
+}
+
+.bouton{
+	color: #B6A257;
+}
+
+header,footer{
+	background-color: #37322B;
+	display: flex;
+	color: white;
+	padding: 10px;
+	align-items: center;
+}
+header{
+	justify-content: space-between;
+	padding-left: 30px;
+}
+
+#banniere{
+	background-image: url("img/rastaurant_background.jpg");
+	min-height: 400px;
+	max-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 2000px 2000px rgba(0, 0, 87, 0.5);
+
+}
+
+#banniere::firstchild{
+	text-align: center;
+	padding-top: 50%;
+}
+
+.logo{
+	font-family: Mansalva;
+}
+
+#email, #tel, #addr, #apropos, #mentions, #info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+	justify-content: space-between;
+}
+ #addr p{
+	 	line-height: 1px;
+
+ }
+
+
+#contact, footer{
+	display: flex;
+	justify-content: space-evenly;
+    align-items: stretch;
+}
+footer{
+	
+}
+
+footer div{
+	font-size: 0.7em;
+	margin: 3%;
+}
+
+.titre{
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+button{
+	background-color: #B6A257;
+	border: none;
+    padding: 3% 10%;
+    border-radius: 10px;
+    color: white;
+}
+
+#premier-titre{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 3%;
+}
+
+#banniere span{
+	position: absolute;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#banniere p{
+	text-align: center;
+	font-size: 1.5em;
+	max-width: 400px;
+}
+
+#contact{
+	padding-bottom: 3%;
+}
+footer.affichage_desktop{
+	width: 100%;
+}
+
+@media screen and (max-width : 880px){
+	#contactTitre{
+		margin-top : 10%;
+	}
+}
+
+@media screen and (max-width : 768px){
+	#contactTitre{
+		margin-top : 15%;
+	}
+}
+
+@media screen and (max-width : 668px){
+	#contactTitre{
+		margin-top : 20%;
+	}
+}
+
+@media screen and (max-width : 568px){
+	.affichage_desktop{
+		display: none;
+	}
+	.affichage_mobile{
+		display: flex;
+		align-items: center;
+	}
+	.section_site div, #contact{
+		display: flex;	
+		flex-direction: column;
+		justify-content: space-between;
+	    align-items: stretch;
+	}
+	#contact div{
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	article{
+		padding: 5%;
+		max-width: 100%;
+	}
+	footer p{
+		display: none;
+	}
+	footer div P.titre{
+		display: block !important;
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#banniere p{
+		font-size: 1.2em;
+		max-width: 60%;
+	}
+	header{
+		align-items: center;
+		padding-right: 30px;
+	}
+
+}
